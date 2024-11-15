@@ -1,0 +1,342 @@
+:root {
+
+    --primary-color: #593A11; 
+  
+    --secondary-color: #480E2E;
+  
+    --accent-color: #595911;
+  
+  }
+
+@font-face {
+    font-family: 'Caslon Antique';
+    src: url("Collegium_Website\Fonts\caslon-antique\CaslonAntique.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    color: var(--primary-color);
+    font-size: 16px;
+    border-left-width: 2rem;
+    border-right-width: 2rem;
+    background-image: url(Images/Background-lq.jpg);
+}
+h1 {
+    text-align:center;
+    font-family:'Caslon Antique', serif;
+    font-size: 3rem;
+}
+h2 {
+    text-align:center;
+    font-family:'Caslon Antique', serif;
+    font-size: 2rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family:'Caslon Antique', serif;
+}
+
+h4 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Caslon Antique', serif;
+}
+
+ul {
+    line-height: 30px;
+}
+
+p.intro {
+    padding-left:50px;
+    padding-right:50px;
+}
+
+p.potion-ingredient {
+    text-align: center;
+}
+
+p.shop-item-page {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color)
+}
+
+a:hover {
+    padding: 10px;
+    border-radius: 10%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    gap: 10px;
+    padding: 10px;
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 10;
+    align-items: center;
+}
+
+.navbar {
+    position: fixed;
+    position: 0;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--primary-color);
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.header-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent-color);
+    border-radius: 5px;
+}
+
+.navlink {
+    color: blanchedalmond;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: auto;
+    gap: 10px;
+}
+
+.logo {
+    grid-column: span 2;
+    grid-row: span 2;
+    height: 100px;
+    width: auto;
+    background-color: blanchedalmond;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Images */
+
+.left-top-img {
+    display: flex;
+    height: auto;
+    width: 50%;
+    grid-column: span 5;
+    border-radius: 5px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 150px
+}
+
+.right-bottom-img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 50%;
+    grid-column: span 5;
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+    float: right;
+    margin: 10px;
+    background-color: blanchedalmond;
+}
+
+.icon {
+    width: 50px;
+    height: auto;
+}
+
+.icon:hover {
+    width: 70px;
+}
+
+.welcome {
+    grid-column: span 5;
+    align-content: center;
+    width: 100%;
+    margin-top: 200px
+}
+
+.about-DM {
+    width: 60%;
+    padding: 10px;
+}
+
+.summary1 {
+    display: grid;
+    padding-left: 10px;
+    padding-right: 10px;
+    grid-column: span 5;
+}
+
+.summary2 {
+    display: grid;
+    padding-left: 10px;
+    padding-right: 10px;
+    grid-column: span 5;
+    width: 60%;
+}
+
+.row1 {
+    display: flex;
+    justify-content: flex-start;
+    grid-column: span 10;
+    padding-top: 10px;
+}
+
+.row2 {
+    grid-column: span 10;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.connect {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.footer {
+    display: flex;
+    background-color: var(--accent-color);
+    color: blanchedalmond;
+    height: 50px;
+    justify-content: center;
+}
+
+.page-title {
+    display: flex;
+    justify-content: center;
+    color: var(--secondary-color)
+}
+
+/* Shop */
+
+.shop-container {
+    display: grid;
+    padding-top: 150px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto;
+}
+
+.shop-item-container {
+    grid-column: span 10;
+}
+
+.item-list {
+    display: flex;
+    grid-column: span 10;
+    max-width: 100%;
+    scroll-behavior: smooth;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;;
+}
+
+.item-list::-webkit-scrollbar {
+    display: none;
+}
+
+.item {
+    scroll-snap-align: center;
+    padding: 30px;
+    background-color: #593A11;
+    color: blanchedalmond;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.carousel {
+    display: flex;
+}
+
+.item-content {
+    padding-top: 150px;
+}
+
+/* table */
+
+.tr-even {
+    border: 1px;
+    border-color: #593A11;
+}
+
+.tr-header {
+    background-color: #593A11;
+    color: blanchedalmond;
+    line-height: 30px;
+}
+
+.tr-odd {
+    background-color: rgb(255, 224, 229);
+    line-height: 30px;
+}
+
+.item-h3 {
+    color: blanchedalmond;
+}
+
+/* Generic Page Paraphenelia */
+
+.page-container {
+    padding-top: 150px;
+    display: grid;
+    grid-column: span 10;
+}
+
+.basic-text {
+    display: grid;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.fancy-h2 {
+    background-color: var(--secondary-color);
+    color: blanchedalmond;
+    border-radius: 5px;
+}
+
+.fancy-h3 {
+    background-color: var(--accent-color);
+    color: blanchedalmond;
+    border-radius: 5px;
+}
+
+.fancy-p {
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.character-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    width: auto;
+}
