@@ -231,6 +231,7 @@ table {
 
 .page-title {
     display: flex;
+    grid-column: span 10;
     justify-content: center;
     color: var(--secondary-color)
 }
